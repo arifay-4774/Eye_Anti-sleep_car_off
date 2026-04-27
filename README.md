@@ -1,3 +1,4 @@
 # Eye_Anti-sleep_car_off
 This project creates an anti-sleep safety system for a remote-controlled Arduino car. The car moves forward continuously as long as the driver is awake and looking at the laptop camera. When the driver falls asleep (eyes closed for 2+ seconds), the car stops immediately via Bluetooth communication.
 The system uses OpenCV and MediaPipe library to detect the driver's eyes in real time through the laptop webcam. The Eye Aspect Ratio (EAR) algorithm measures how open or closed the eyes are. When EAR drops below the threshold for 2 seconds, Python sends a STOP command via Bluetooth to the Arduino, which controls the motors.
+download this also "shape_predictor_68_face_landmarks.dat"
